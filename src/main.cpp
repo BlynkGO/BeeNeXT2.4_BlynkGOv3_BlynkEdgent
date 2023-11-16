@@ -2,8 +2,8 @@
  * ที่แอพ Blynk ให้เพิ่มโปรเจค และเพิ่ม ปุ่ม 1 ปุ่ม โดยใช้ V0
  */
 
-#define BLYNK_TEMPLATE_ID               "TMPLLSDaGvbW"
-#define BLYNK_TEMPLATE_NAME             "MyTemplate"
+#define BLYNK_TEMPLATE_ID               "TMPxxxxxx"
+#define BLYNK_TEMPLATE_NAME             "Device"
 #define BLYNK_FIRMWARE_VERSION          "0.1.0"
 
 #define BLYNK_PRINT Serial
