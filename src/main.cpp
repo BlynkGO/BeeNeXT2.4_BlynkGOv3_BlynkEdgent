@@ -72,10 +72,8 @@ void setup()
     BlynkGO.flashMem("LED", led.isON());  // บันทึกสถานะลง flashMem
     Blynk.virtualWrite(V0, led.isON() );  // อัพเดตไปให้ แอพ Blynk หลังจากผู้ใช้กด led ที่ จอ BeeNeXT
   });
-  BlynkGO.update();
-
   //-------------------------
-  BlynkEdgent.begin();
+  BlynkEdgent.begin();                    // วางไว้หลัง ออกแบบ graphic
 }
 
 void loop() {

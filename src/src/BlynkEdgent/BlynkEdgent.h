@@ -97,6 +97,7 @@ class Edgent {
 public:
   void begin()
   {
+    BlynkGO.update();
     WiFi.persistent(false);
     WiFi.enableSTA(true); // Needed to get MAC
 #if (ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(4, 0, 0))
