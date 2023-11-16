@@ -99,11 +99,13 @@ NTP_SYNCED(){
 }
 
 BLYNK_CONNECTED(){
+  Serial.println("[Blynk] connected");
   rect_blynk_connection.color(TFT_COLOR_HSV(120,100,70));
   Blynk.virtualWrite(V0, (bool) BlynkGO.flashMem_Int("LED"));  // update ไปให้ แอพ Blynk หลังเชื่อมต่อสำเร็จ ด้วย ค่าที่บันทึกจาก flashMem
 }
 
 BLYNK_DISCONNECTED(){
+  Serial.println("[Blynk] disconnected");
   rect_blynk_connection.color(TFT_RED);
 }
 
